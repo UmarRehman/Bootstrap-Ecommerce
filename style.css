@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins" san-serif;
+}
+h1 {
+  font: size 2.5rem;
+  font-weight: 700;
+}
+h2 {
+  font: size 1.8rem;
+  font-weight: 600;
+}
+h3 {
+  font: size 1.4rem;
+  font-weight: 800;
+}
+h4 {
+  font: size 1.1rem;
+  font-weight: 600;
+}
+h5 {
+  font: size 1rem;
+  font-weight: 400;
+  color: #1d1d1d;
+}
+h6 {
+  color: #d8d8d8;
+}
+.navbar {
+  font-style: 16px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar-light .navbar-nav .nav-link {
+  padding: 0 20px;
+  color: black;
+  transition: 0.3 ease;
+}
+
+.nav-link:hover,
+.navbar i:active,
+.navbar-light.navbar-nav.nav-link.active {
+  color: coral !important;
+}
+.navbar i {
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3 ease;
+}
+#home {
+  background-image: url("img/back.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+
+  background-position: top 60px center;
+  display: flex;
+  align-items: center;
+}
+#home span {
+  color: coral;
+}
+.btn {
+  width: 130px;
+  border: none;
+  height: 50px;
+  outline: none;
+  border-radius: 0%;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.3 ease;
+}
+#home button:hover {
+  background-color: coral !important;
+}
+.navbar-light.navbar-toggler {
+  border: none;
+  outline: none;
+}
+@media only screen and (max-width: 991px) {
+  body > nav > div > button:hover,
+  body > nav > div > button:focus {
+    outline: none;
+    background-color: coral;
+  }
+  body > nav > div > button:hover #bar,
+  body > nav > div > button:focus #bar {
+    color: white;
+  }
+  #navbarSupportedContent > ul {
+    margin: 1rem;
+    text-align: right;
+  }
+  #navbarSupportedContent > ul > li:nth-child(n) > a {
+    padding: 8px 0;
+  }
+}
+#new .one img {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#new .one .details {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3 ease;
+}
+#new .one .details:hover {
+  cursor: pointer;
+  background-color: rgba(245, 178, 178, 0.7);
+}
+#new .one .details button {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+  padding: 2.5px;
+  transform: translateY(70px);
+  transition: 0.3s ease;
+}
+#new .one .details button:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+#new .one:nth-child(1) .details {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: start;
+}
+#new .one:nth-child(2) .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#new .one:nth-child(3) .details {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.product {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.product img {
+  transition: 0.3s all;
+}
+.product:hover img {
+  opacity: 0.7;
+}
+.product .buy-btn {
+  background-color: coral;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.3s all;
+}
+.product:hover .buy-btn {
+  transform: translateY(0);
+  opacity: 1;
+}
+hr {
+  width: 30px;
+  height: 2px;
+  background-color: coral;
+}
+.star {
+  padding: 10px 0;
+}
+.star i {
+  font-size: 0.8 rem;
+  color: goldenrod;
+}
+#banner {
+  background-image: url("img/banner/2.jpg");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top 70px center;
+  display: flex;
+  align-items: center;
+}
+#banner h4,
+h1 {
+  color: white;
+}
+#banner button {
+  background-color: coral;
+  color: white;
+}
+#clothes img {
+  width: 100%;
+  height: 50vh;
+}
+#watches img {
+  width: 100%;
+  height: 50vh;
+}
+footer {
+  background-color: #222222;
+}
+footer h5 {
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+footer li {
+  padding-bottom: 4px;
+}
+footer li a {
+  font-size: 0.8rem;
+  color: #999;
+}
+footer li a:hover {
+  color: #d8d8d8;
+}
+footer p {
+  font-size: 0.8rem;
+  color: #999;
+}
+footer .copyright a {
+  background-color: white;
+  width: 38px;
+  height: 38px;
+  display: inline-block;
+  border-radius: 50%;
+  color: black;
+  line-height: 38px;
+  text-align: center;
+  transition: 0.3s ease;
+  margin: 0 5px;
+}
+footer .copyright a:hover {
+  color: white;
+  background-color: coral;
+}
+#featured .product img {
+  width: 100%;
+  height: 50vh;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+#featured > div.row.mx-auto.container > nav > ul > li.page-item.active > a {
+  background-color: black;
+}
+.active1 {
+  color: coral !important;
+}
+/* #featured
+  > div.row.mx-auto.container
+  > nav
+  > ul
+
+  > li.page-item.active
+  > a:focus {
+  outline: none;
+  border: none;
+} */
+#featured > div.row.mx-auto.container > nav > ul > li:nth-child(n):hover > a {
+  background-color: coral;
+  color: white;
+}
+.pagination a {
+  color: black;
+}
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+}
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+.sproduct select {
+  display: block;
+  padding: 5px 10px;
+}
+.sproduct input {
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.sproduct input:focus {
+  outline: none;
+}
+.sproduct button {
+  background-color: coral;
+}
